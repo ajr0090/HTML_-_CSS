@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  appearance: base-select;
+  background-color: rgba(4, 61, 94, 0.8);
+  color: antiquewhite;
+  font-family: Poppins, sans-serif;
+  padding: 5px 20px;
+}
+
+select::picker(select) {
+  appearance: base-select;
+  background-color: rgba(235, 14, 14, 0.144);
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+option:hover {
+  background-color: rgba(10, 68, 228, 0.144);
+  cursor: pointer;
+}
+select::picker-icon {
+  content: '🍗';
+  font-size: x-small;
+  padding: 1.5px;
+  align-content: start;
+  background-color: rgb(201, 184, 184);
+  border-radius: 50%;
+  transition: 1.5s ease;
+}
+select:open::picker-icon {
+  rotate: 180deg;
+}
+select option:checked {
+  background-color: blue;
+  color: white;
+}
+select option::checkmark {
+  content: '🥩';
+}
+select selectedcontent {
+  color: tomato;
+}

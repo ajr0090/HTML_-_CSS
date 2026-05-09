@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 12px solid white;
+  border-top: 12px solid #ee67a2;
+  border-radius: 50%;
+  animation: spin 2s ease-in-out infinite alternate;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

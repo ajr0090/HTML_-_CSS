@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.content {
+  width: clamp(320px, 100%, 900px);
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.content .info {
+  text-align: center;
+  font-family: Bitter, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.content p {
+  margin: 20px 0;
+}
+.content .info span {
+  color: #e95400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Bitter, sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-size: 50px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-size: 38px;
+  letter-spacing: 0;
+}
+
+h4 {
+  font-size: 30px;
+  letter-spacing: 0.25px;
+}
+h5 {
+  font-size: 24px;
+  letter-spacing: 0.25px;
+}
+
+h6 {
+  font-size: 20px;
+  letter-spacing: 0.15px;
+}
+
+.content .headline {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 40px 0;
+  font-size: 18px;
+}
+.content .quote {
+  font-style: italic;
+  font-size: 14px;
+  border-left: 3px solid #e95400;
+  padding-left: 16px;
+  margin: 32px 0 32px 32px;
+}
+
+.content .quote cite {
+  display: block;
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.content hr {
+  margin: 30px 0;
+}
+.content h3 {
+  text-transform: capitalize;
+}
+
+.content code {
+  color: #e95400;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: #863ae8;
+}
+footer ul {
+  list-style: none;
+  padding: 0 35px;
+  margin: 0 auto;
+  width: clamp(320px, 100%, 900px);
+  padding: 28px 0;
+}
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+footer ul li a:hover {
+  color: #e95400;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #863ae8;
+  color: #fff;
+  text-align: center;
+}
+
+.container h1,
+.container p {
+  width: clamp(320px, 75%, 900px);
+  margin: 16px 0;
+}
+
+.container p {
+  font-weight: 300;
+}
+
+.container hr {
+  width: clamp(320px, 50%, 900px);
+  margin: 32px 0;
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Cormorant, serif;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 300;
+  margin-right: 32px;
+}
+
+nav,
+.links li {
+  display: inline-block;
+}
+
+.links li:nth-child(1) a {
+  border-bottom: 1px solid black;
+}
+
+.links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 8px;
+}
+.navbar {
+  margin: 32px;
+}
+
+.imgContainer {
+  padding: 16px;
+}
+.card {
+  width: 49.85%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.card h2 {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+.card img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card img:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  width: clamp(400px, 40%, 50%);
+  margin: 100px 0 100px 200px;
+}
+
+.footer h3 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.contact {
+  margin-top: 100px;
+}
+.contact p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer h3:nth-child(2) {
+  margin-top: 30px;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  padding-bottom: 3px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1300px) {
+  .card {
+    width: 100%;
+  }
+  .footer {
+    width: 80%;
+    margin: 100px 0 100px 100px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .card {
+    padding: 8px;
+  }
+  .imgContainer {
+    padding: 8px;
+  }
+  .footer {
+    margin: 40px 0 40px 40px;
+    width: 80%;
+  }
+}

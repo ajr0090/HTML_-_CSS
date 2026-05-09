@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: gray;
+}
+
+.box {
+  background-image: conic-gradient(#5f121e, #2f420a52, #5f121e);
+  height: 300px;
+  flex: 1 1 20%;
+  border-radius: 20px;
+  box-sizing: border-box;
+  border: 10px solid white;
+}
+.box:nth-of-type(2n) {
+  background-image: conic-gradient(#ee123354, #2131032d, #ee123354);
+}
+
+@media only screen and (max-width: 1400px) {
+  .box {
+    flex: 1 1 25%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .box {
+    flex: 1 1 33.3333333333%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .box {
+    flex: 1 1 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    flex: 1 1 100%;
+  }
+}
