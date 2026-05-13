@@ -1,0 +1,35 @@
+:root {
+  --width: 400px;
+  --height: 300px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.box {
+  background-image: radial-gradient(at -50% 12px, red 30%, black 50%);
+  width: 750px;
+  height: 400px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 12px;
+}
+
+.tinybox {
+  background-image: radial-gradient(at 0% 50%, #0eefff, #b4f84ebb);
+  border-radius: 12px;
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  top: calc(50% - var(--height) / 2);
+  left: calc(50% - var(--width) / 2);
+}

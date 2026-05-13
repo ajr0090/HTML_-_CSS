@@ -1,0 +1,59 @@
+:root {
+  --brand-color: #5a5c08;
+  --standard-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+  --radius: 10px;
+  --primary-gradient: linear-gradient(10deg, #0a091d, #a8097849);
+  --primary-color: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--brand-color);
+  padding: 15px 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--radius);
+  cursor: pointer;
+  box-shadow: var(--standard-shadow);
+  color: inherit;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--brand-color);
+}
+
+button:active {
+  background-color: var(--brand-color);
+  color: var(--primary-color);
+}
+
+button:focus {
+  outline: none;
+}
+
+h1 {
+  --brand-color: purple; /*local scope */
+  color: var(--brand-color);
+  display: inline-block;
+  box-shadow: var(--standard-shadow);
+}
+
+div {
+  border: 3px solid var(--brand-color);
+  box-shadow: var(--standard-shadow);
+  border-radius: var(--radius);
+  padding: 45px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: var(--primary-gradient);
+}
