@@ -1,0 +1,91 @@
+h2 {
+  font-size: min(1vw + 2rem, 5rem);
+  text-align: center;
+  text-shadow: 1px 1px rgba(11, 30, 199, 0.247);
+  color: rgba(35, 168, 168, 0.904);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#111, #222, #444, #999, #222, #111);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 200px;
+  overflow-x: scroll;
+  position: relative;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.4);
+  padding: 10px 30px;
+  border-radius: 10px;
+  scroll-behavior: smooth; /* Scroll behaviour  */
+  anchor-name: --carousel; /* Using Anchoring as absolute positioning will not work */
+  scroll-snap-type: x mandatory;
+  scroll-marker-group: after;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+.container::scroll-button(right),
+.container::scroll-button(left) {
+  content: '◀';
+  border: none;
+  font-family: Cambria, serif;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  padding: 5px 10px 5px;
+  cursor: pointer;
+  position: fixed;
+  position-anchor: --carousel;
+  position-area: left center;
+  translate: -40%;
+}
+
+.container::scroll-button(left) {
+  content: '▶';
+  position-area: right center;
+  /* translate: -10%; */
+  /* transform: translateX(-10px); */
+  translate: 40%;
+}
+
+.container::scroll-button(right):disabled,
+.container::scroll-button(left):disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.card {
+  scroll-snap-align: start;
+}
+
+.container::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card::scroll-marker {
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: rgb(218, 20, 20);
+}
